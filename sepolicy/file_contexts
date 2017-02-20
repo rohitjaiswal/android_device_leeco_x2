@@ -3,7 +3,7 @@
 /dev/block/bootdevice/by-name/oem_stanvbk                       u:object_r:modem_efs_partition_device:s0
 
 # FRP partition
-/dev/block/bootdevice/by-name/config                            u:object_r:frp_block_device:s0
+/dev/block/bootdevice/by-name/frp                               u:object_r:frp_block_device:s0
 
 /persist/sensors/gyro_sensitity_cal                             u:object_r:sensors_persist_file:s0
 
@@ -16,3 +16,5 @@
 /sys/devices/soc/soc:fpc_fpc1020/proximity_state                u:object_r:sysfs_fpc_proximity:s0
 
 /system/bin/ifaadaemon                                          u:object_r:ifaadaemon_exec:s0
+
+/system/bin/yep_qmi_server                                      u:object_r:yep_qmi_server_exec:s0
