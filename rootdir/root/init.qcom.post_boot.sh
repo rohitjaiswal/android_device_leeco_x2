@@ -1830,6 +1830,27 @@ case "$target" in
      ;;
 esac
 
+# Some tweeks
+echo 1 > /sys/block/sda/queue/add_random
+echo 0 > /sys/block/sda/queue/iostats
+echo 4148 > /sys/block/sda/queue/read_ahead_kb
+echo 4000 > /proc/sys/vm/dirty_expire_centisecs
+echo 1200 > /proc/sys/vm/dirty_writeback_centisecs
+echo NO_NORMALIZED_SLEEPER > /sys/kernel/debug/sched_features
+echo NO_GENTLE_FAIR_SLEEPERS > /sys/kernel/debug/sched_features
+echo NO_NEW_FAIR_SLEEPERS > /sys/kernel/debug/sched_features
+echo "on" > /sys/power/autosleep
+rm /data/local/*.apk
+rm /data/local/tmp/*.apk
+rm /data/*.log
+rm /data/log/*.log
+rm /cache/*
+rm /cache/recovery/*
+rm /data/system/dropbox/*.txt
+rm /data/backup/pending/*.tmp
+rm /data/tombstones/*
+rm /sdcard/LOST.DIR/*
+
 # Let kernel know our image version/variant/crm_version
 if [ -f /sys/devices/soc0/select_image ]; then
     image_version="10:"
