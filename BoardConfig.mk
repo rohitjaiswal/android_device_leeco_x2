@@ -35,7 +35,8 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 an
 BOARD_KERNEL_TAGS_OFFSET := 0x02000000
 BOARD_RAMDISK_OFFSET     := 0x02200000
 
-TARGET_KERNEL_CONFIG := lineage_x2_defconfig
+#TARGET_KERNEL_CONFIG := lineage_x2_defconfig
+TARGET_KERNEL_CONFIG := msm8996-le_x2-perf_defconfig
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
