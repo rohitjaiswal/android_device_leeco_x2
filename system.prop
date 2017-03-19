@@ -60,3 +60,6 @@ persist.loc.nlp_name=com.qualcomm.location
 # Screen Density
 ro.sf.lcd_density=560
 
+# VoLTE
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
