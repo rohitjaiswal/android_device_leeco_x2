@@ -19,8 +19,7 @@ ro.audio.flinger_standbytime_ms=300
 
 # Camera
 persist.camera.stats.test=5
-
-persist.camera.HAL3.enabled=1
+persist.camera.HAL3.enabled=0
 qcom.hw.aac.encoder=true
 
 # Fingerprint
